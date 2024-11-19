@@ -1,0 +1,38 @@
+<ion-content class="ion-padding">
+  <div id="app-bar" class="no-padding">
+    <ion-back-button defaultHref="/login" icon="arrow-back-outline" slot="start"></ion-back-button>
+  </div>
+  
+  <h1>Login</h1>
+  <h3>We are happy to have you back.</h3>
+
+  <ion-button class="google" expand="block">
+    <img src="../../../assets/images/google.png" alt="Google Logo" style="width: 24px; height: 24px; margin-right: 8px;">
+    Sign in with Google
+  </ion-button>
+
+  <div class="line-text">
+    <span class="lines"></span>
+    <span class="text"> or connect using</span>
+  </div>
+
+  <form>
+    <ion-item class="box">
+      <ion-input type="email" placeholder="Email address" required></ion-input>
+    </ion-item>
+  
+    <ion-item class="box">
+      <ion-input type="password" placeholder="Password" required></ion-input>
+    </ion-item>
+
+    <p class="forgotpass">
+      <span class="forgot-text" (click)="navigateToForgotpass()">Forgot password?</span>
+    </p>    
+  
+    <ion-button class="auth-button" expand="block" type="submit" (click)="navigateToHome()">
+      Login
+    </ion-button>
+  </form>
+
+  <p class="footer-text">Don't have an account?<a (click)="navigateToSignup()">Sign up</a></p>
+</ion-content>

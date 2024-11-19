@@ -1,0 +1,87 @@
+<ion-content>
+  <!-- Carousel Section -->
+  <ion-grid class="carousel-events">
+    <div class="top-container">
+      <h4>Together, We Can<br>Make a Difference
+      <p class="description">Every action counts –<br>join us in making an impact!</p>
+    </h4>
+      <img src="../../assets/images/events.png" alt="banner" class="top-container-img">
+    </div>
+  </ion-grid>
+
+  <!-- Upcoming Events Section -->
+  <div class="centered-text">
+    <h2>Upcoming Events</h2>
+  </div>
+
+  <div class="events-container">
+    <div class="events-card">
+      <img src="../../../assets/images/events2.png" class="events-image" alt="Fundraising Gala">
+      <div class="events-content">
+        <h2 class="events-title">Fundraising Gala</h2>
+        <p class="events-description">Date: Oct. 30, 2024</p>
+        <p class="events-description">Time: 9:00 AM - 4:00 PM</p>
+        <p class="events-description1">Here's a small text description for the card content. Nothing more, nothing less.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="events-container">
+    <div class="events-card">
+      <img src="../../../assets/images/events1.png" class="events-image" alt="Adoption Day">
+      <div class="events-content">
+        <h2 class="events-title">Adoption Day</h2>
+        <p class="events-description">Date: Oct. 30, 2024</p>
+        <p class="events-description">Time: 9:00 AM - 4:00 PM</p>
+        <p class="events-description1">Here's a small text description for the card content. Nothing more, nothing less.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="events-container">
+    <div class="events-card">
+      <img src="../../../assets/images/events4.png" class="events-image" alt="Pet Care Workshop">
+      <div class="events-content">
+        <h2 class="events-title">Pet Care Workshop</h2>
+        <p class="events-description">Date: Oct. 30, 2024</p>
+        <p class="events-description">Time: 9:00 AM - 4:00 PM</p>
+        <p class="events-description1">Here's a small text description for the card content. Nothing more, nothing less.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Events Gallery Section -->
+  <section class="centered-text">
+    <h2>Events Gallery</h2>
+  </section>
+
+  <ion-grid class="gallery">
+    <ion-row>
+      <!-- First Image -->
+      <ion-col size="6">
+        <img alt="Event Image 1" src="https://ionicframework.com/docs/img/demos/card-media.png" class="gallery-image" />
+      </ion-col>
+
+      <!-- Second Image -->
+      <ion-col size="6">
+        <img alt="Event Image 2" src="https://ionicframework.com/docs/img/demos/card-media.png" class="gallery-image" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Frequently Asked Questions Section -->
+  <section class="centered-text">
+    <h2>Frequently Asked Questions</h2>
+  </section>
+
+  <ion-accordion-group class="custom-accordion-group">
+    <ion-accordion *ngFor="let faq of faqs" class="custom-accordion">
+      <ion-item slot="header" class="custom-header">
+        <ion-label class="custom-label">{{ faq.question }}</ion-label>
+      </ion-item>
+      <div slot="content" class="custom-content content-padding">
+        {{ faq.answer }}
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

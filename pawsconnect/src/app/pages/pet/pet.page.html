@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pet Care </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+  <!-- Pet Care Articles Section -->
+  <div class="article-container">
+    <div *ngFor="let resource of petCareResources" class="resource-card animated fade-in" (click)="openArticle(resource.link)">
+      <img [src]="resource.image" alt="{{ resource.title }}" class="resource-image">
+      <div class="resource-content">
+        <h2 class="resource-title">{{ resource.title }}</h2>
+        <p class="resource-description">{{ resource.description }}</p>
+      </div>
+      <ion-icon name="chevron-forward-outline" class="chevron-icon"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>

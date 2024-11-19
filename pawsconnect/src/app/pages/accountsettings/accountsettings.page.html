@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="account-settings-title">Account Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="profile-content">
+  <div class="profile-header">
+    <ion-avatar class="profile-avatar">
+      <img src="assets/images/avatar.png" alt="User Avatar" />
+      <ion-icon id="camera-icon" name="camera"></ion-icon>
+    </ion-avatar>
+    <h2>{{ userName }}</h2>
+    <ion-card-subtitle class="profile-subtitle">{{userEmail}}</ion-card-subtitle>
+  </div>
+  
+  <p class="psettings">Account settings</p>
+  <div class="psettings1">
+    <ion-button (click)="navigateToEditProfile()" class="edit-profile-btn">
+      <ion-icon slot="start" name="person-outline"></ion-icon>
+        <span>Edit profile</span>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="psettings1">
+    <ion-button (click)="navigateToChangepass()" class="edit-profile-btn">
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+        <span>Change password</span>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="psettings1">
+    <ion-button (click)="signOut()" *ngIf="isLoggedIn" class="edit-profile-btn">
+      <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        <span>Sign out</span>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+
+    </ion-button>
+  </div>
+
+  <p class="psettings">Help & support</p>
+
+  <div class="psettings1">
+    <ion-button (click)="navigateToFaqs()" class="edit-profile-btn">
+      <ion-icon slot="start" name="help-circle-outline"></ion-icon>
+        <span>FAQs</span>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+
+  <div class="psettings1">
+    <ion-button (click)="navigateToTermcons()" class="edit-profile-btn">
+      <ion-icon slot="start" name="information-circle-outline"></ion-icon>
+        <span>Terms of Use &
+          Privacy Policy</span>
+        <ion-icon slot="end" name="chevron-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

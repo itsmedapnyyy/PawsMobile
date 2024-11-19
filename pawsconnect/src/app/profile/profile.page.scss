@@ -1,0 +1,121 @@
+.profile-content {
+	--background: transparent;
+	--border-radius: 100px;
+	margin-left: 20px; 
+	margin-right: 20px; 
+  
+.profile-header {
+	text-align: center;
+	padding: 12px 0;
+	margin-bottom: 0 !important;
+
+}
+
+	
+.profile-avatar {
+	  width: 150px;
+	  height: 150px;
+	  padding: 5px; 
+	  border: 7px solid var(--ion-color-primary);
+	  margin: 10px auto;
+	  position: relative;
+	  
+	  #camera-icon {
+		font-size: 28px;
+		position: absolute;
+		bottom: 15px; 
+		right: -10px; 
+		color: #652e89;
+		background-color: #e29824;
+		padding: 6px;
+		border-radius: 20px;
+		border: 1px solid;
+	  }
+
+	  img {
+		border-radius: 50%;
+	  }
+	}
+  
+	h2 {
+	  font-size: 24px;
+	  font-weight: bold;
+	  margin-top: 5px;
+	  margin-bottom: 5px;
+	}
+
+	.profile-details-container {
+	  margin-top: 0 !important;
+	  padding-top: 0 !important;
+	  margin-left: 12px; 
+	  margin-right: 12px; 
+	  
+	  ion-item {
+		margin: 5px 0;
+	  }
+  
+	  ion-label {
+		font-size: 21px;
+		font-weight: 600;
+		color: black;
+		font-family: Gilroy;
+		margin-bottom: 15px;
+	  }
+  
+	  ion-text,
+	  ion-input {
+		font-size: 15px;
+		color: var(--ion-color-dark);
+		padding: 10px;
+		background-color: transparent;
+		width: 100%;
+		border-radius: 8px;
+		border: 2px solid #ced4da; 
+	  }
+	}
+
+	.profile-actions {
+		display: flex;
+		justify-content: center; 
+		margin-left: 25px; 
+		margin-right: 25px; 
+		margin-top: 5px;
+	  }
+	  
+	  .profile-actions ion-button {
+		width: 100%; 
+		height: 45px; 
+		--border-radius: 12px; 
+		font-size: 16px; 
+		font-weight: bolder;
+		text-transform: initial; 
+		color: #ffffff; 
+		--background: #e29824; 
+		--color: white; 
+		margin-bottom: 20px; 
+		--box-shadow: none;
+		--ion-button-shadow: none;
+		--border: 2px solid #e29824;
+	}
+	
+	.profile-actions ion-button span::first-letter {
+		text-transform: uppercase; 
+	}
+	
+	.profile-actions ion-button:hover {
+		--background: #652e89; 
+		transform: scale(1.05); 
+		color: white;
+		font-weight: 700 !important; 
+		width: 100%; 
+		height: 45px; 
+	}
+	  ion-icon {
+		font-size: 23px;
+		padding-left: 3px;
+	  }
+	}
+
+	ion-card-subtitle {
+	font-size: 15px;
+}
